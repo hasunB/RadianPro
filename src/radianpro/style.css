@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 5, 2025, 1:23:15 PM
+    Author     : hasun
+*/
+
+.root {
+    -fx-background-color: rgba(32, 32, 32, 100);
+    -fx-background-radius: 50;
+}
+
+.close {
+    -fx-background-color: red;
+    -fx-background-radius: 30;
+}
+
+.close:hover {
+    -fx-background-color:#be0000;
+}
+
+.minimize {
+    -fx-background-color: #D06F00;
+    -fx-background-radius: 30;
+}
+
+.minimize:hover {
+    -fx-background-color:#B96300;
+}
+
+.dashB {
+    -fx-background-color:#47D500;
+    -fx-background-radius: 30;
+}
+
+.dashB:hover{
+    -fx-background-color:#3DB402;
+}
+
+.gif-container {
+    -fx-background-radius: 50;
+    -fx-background-color: red;
+    -fx-background-image: url(../assets/515.gif);
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-border-color: red;
+    -fx-border-style: solid;
+    -fx-border-width: 2;
+    -fx-border-radius: 50;
+}
+
+
+.rounded-image {
+    -fx-border-radius: 15; /* Rounded border */
+    -fx-background-radius: 15; /* For the background */
+}
+
+
+.slider .track{
+    -progress : 0.2;
+    -fx-background-color: linear-gradient(to right, #2D819D -progress, #969696 -progress);
+}

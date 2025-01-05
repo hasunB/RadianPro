@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radianpro.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="480.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="radianpro.FXMLDocumentController">
+   <children>
+      <Pane layoutX="9.0" layoutY="10.0" prefHeight="680.0" prefWidth="316.0" style="-fx-background-radius: 50px; -fx-border-style: solid; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 50px;">
+         <children>
+            <Pane layoutX="13.0" layoutY="11.0" prefHeight="406.0" prefWidth="290.0" style="-fx-background-color: white; -fx-background-radius: 50;" />
+            <Button layoutX="14.0" layoutY="433.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Button layoutX="14.0" layoutY="514.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Button layoutX="14.0" layoutY="596.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Button layoutX="123.0" layoutY="433.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Button layoutX="123.0" layoutY="514.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Button layoutX="123.0" layoutY="596.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-radius: 55;" />
+            <Pane layoutX="232.0" layoutY="432.0" prefHeight="234.0" prefWidth="70.0" style="-fx-background-color: white; -fx-background-radius: 35;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="21.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/8678388_contrast_brightness_setting_icon.png" />
+                     </image>
+                  </ImageView>
+                  <Slider layoutX="20.0" layoutY="21.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="30.0" stylesheets="@style.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="337.0" layoutY="54.0" prefHeight="636.0" prefWidth="133.0" style="-fx-background-radius: 50px; -fx-border-color: white; -fx-border-style: solid; -fx-border-width: 2; -fx-border-radius: 50px;">
+         <children>
+            <Button layoutX="14.0" layoutY="396.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" style="-fx-background-radius: 55; -fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="105.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/172308_bluetooth_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="15.0" layoutY="517.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" style="-fx-background-radius: 55; -fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="105.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/8665770_power_off_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="14.0" layoutY="273.0" mnemonicParsing="false" prefHeight="105.0" prefWidth="105.0" style="-fx-background-radius: 55; -fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="105.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/3844439_gear_setting_settings_wheel_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="244.0" fitWidth="110.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="rounded-image" />
+            <ImageView fitHeight="268.0" fitWidth="110.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/anime.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="421.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="30.0" prefWidth="30.0" styleClass="close" stylesheets="@style.css" />
+      <Button layoutX="383.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="minimize" stylesheets="@style.css" />
+      <Button layoutX="344.0" layoutY="14.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" styleClass="dashB" stylesheets="@style.css" />
+   </children>
 </AnchorPane>
