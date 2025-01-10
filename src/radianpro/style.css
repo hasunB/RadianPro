@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 */
 
 .root {
-    -fx-background-color: rgba(32, 32, 32, 100);
+    -fx-background-color: rgba(26,26,26,255);
     -fx-background-radius: 50;
 }
 
